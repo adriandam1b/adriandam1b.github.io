@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+    <html lang= "es" dir="ltr">
+    <head>
+        <!--Página web hecha por Adrián de Prada Belda-->
+        <title>Desarrollo de Aplicaciones Multiplataforma</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" type="text/css" href="../CSS/Login.css">
+        <link rel="shortcut icon" href="../recursos/icon1.png" type = "image/png">
+    </head>
+
+    <body>
+
+            <!--Registrarse-->
+
+            <div class = "container-form sign-up">
+                <div class = "welcome-back">
+                    <div class = "message">
+                        <h2>Desarrollo de <br> Aplicaciones Multiplataforma</h2>
+                            <br>
+                        <p>Si ya tienes una cuenta, puedes iniciar sesión aquí.</p>
+                        <button class = "sign-up-btn"> Iniciar sesión </button>
+                    </div>
+                </div>
+
+                <form class = "formulario" action = "../Prac_01_DAM_adrians.prabel.html" >
+                    <h2 class = "create-account">Crear una cuenta</h2>
+                        <div class = "datos">    
+                            <input type="text" placeholder="Nombre" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="password" placeholder="Contraseña" required>
+                            <button type="submit">Registrarse</button>
+                        </div>
+                </form>
+            </div>
+
+
+            <!--Iniciar sesión-->
+
+            <div class = "container-form sign-in">
+                <form class = "formulario" action = "../Prac_01_DAM_adrians.prabel.html">
+                    <h2 class = "create-account">Iniciar sesión</h2>
+                    <div class = "datos">    
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Contraseña" required>
+                        <button type="submit">Iniciar sesión</button>
+                    </div>
+                </form>
+
+                <div class = "welcome-back">
+                    <div class = "message">
+                        <h2>Desarrollo de <br> Aplicaciones Multiplataforma</h2>
+                            <br>
+                        <p>Si aún no tienes cuenta, puedes registrarte aquí.</p>
+                        <button class = "sign-in-btn"> Registrarse </button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Script a ejecutar-->
+
+            <script src="../Scripts/login.js"></script>
+
+
+            <!--Capa que permite oscurecer el video de fondo de la página web-->
+
+            <div id = "capa2"></div>
+
+            <!--Video de fondo de la página web-->
+
+            <video muted autoplay loop>
+                    <source src="../recursos/MainBackground.mp4" type = "video/mp4">
+            </video>  
+
+
+        <footer>
+            <p>Lenguaje de Marcas - 2022</p>
+        </footer>
+
+    </body>
+
+</html>

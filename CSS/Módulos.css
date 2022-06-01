@@ -1,0 +1,221 @@
+/*-----------------ESTILOS GENERALES---------------------*/
+
+body {
+  display: flex;
+}
+
+/*Barra lateral*/
+
+div.barra {
+  position: fixed;
+  top: 14%;
+}
+
+nav.nav {
+  font-family: 'Verdana';
+  font-size: 23px;
+  width: 300px;
+}
+
+ul.list {
+  width: 100%;
+  height: 84vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+ul.list_PROGR {background: linear-gradient(rgb(203, 166, 252),rgb(190, 140, 255));}
+ul.list_LDMM  {background: linear-gradient(rgb(252, 168, 168),rgb(255, 140, 140));}
+ul.list_EEDD  {background: linear-gradient(rgb(255, 164, 220),rgb(255, 140, 211));}
+ul.list_SSII  {background: linear-gradient(rgb(183, 253, 174),rgb(153, 255, 140));}
+ul.list_BBDD  {background: linear-gradient(rgb(255, 218, 170),rgb(255, 205, 140));}
+ul.list_FOL   {background: linear-gradient(rgb(255, 254, 172),rgb(255, 253, 140));}
+
+li.list_item {
+  list-style-type: none;
+  width: 100%;
+  text-align: left;
+  overflow: hidden;
+}
+
+li.list_item--click {
+  cursor: pointer;
+}
+
+div.list_button {
+  display: flex;
+  align-items: left;
+  gap: 1em;
+  width: 70%;
+  margin: 0 auto;
+}
+
+img.list_arrow {
+  margin-left: auto;
+  width: 20%;
+  transition: transform .3s;
+}
+
+.arrow .list_arrow {
+  transform: rotate(90deg);
+}
+
+a.nav_link {
+  color: white;
+  display: block;
+  padding: 15px 0;
+  text-decoration: none;
+  transition: all 300ms ease;
+}
+
+a.nav_link_titulo {
+  font-size: 30px;
+}
+
+a.nav_link_titulo:hover {
+  text-shadow: 0px 0.5px 4px black;
+  font-size: 35px;
+  text-decoration: underline;
+  color: white;
+}
+
+a.nav_link--inside {
+  border-radius: 6px;
+  padding-left: 20px;
+  transition: all 400ms ease;
+}
+
+a.nav_link--inside_PROGR:hover {background-color: #72078d;}
+a.nav_link--inside_LDMM:hover  {background-color: #8d070c;}
+a.nav_link--inside_EEDD:hover  {background-color: #ae0088;}
+a.nav_link--inside_SSII:hover  {background-color: #078d0c;}
+a.nav_link--inside_BBDD:hover  {background-color: #b17300;}
+a.nav_link--inside_FOL:hover   {background-color: #8d8907;}
+
+ul.list_show {
+  width: 80%;
+  margin-left: auto;
+  border-left: 2px solid black;
+  list-style: none;
+  transition: height .4s;
+  height: 0;
+}
+
+div.contenido {
+  position: absolute;
+  top: 15%;
+  left: 21%;
+  width: 75%;
+}
+
+/*Flecha lateral para volver al inicio de la página*/
+
+img#upArrow {z-index:3; width:80px; position:fixed; margin-left: 1800px; margin-top: 800px}
+
+/*Degradado*/
+
+img#degradado {position: fixed; margin-top:-350px; margin-left:-10px; width: 2000px; opacity: 40%;}
+
+
+/*-----------------ESTILOS CONCRETOS---------------------*/
+
+/*Programación*/
+
+body#bodyPROGR    
+  {background-color: rgb(234, 202, 255);}
+div#tituloPROGR   
+  {z-index: 2; position: fixed; width: 1890px; background-color:rgb(168,101,255); font-family: Verdana; text-decoration: underline; text-align: center}
+img#img1PROGR     
+  {height: 360px; width:600px; margin-right: -50px; margin-top:-50px; float: right}
+
+a.linkPROGR         {color: rgb(130, 1, 134); text-decoration: none}
+ .linkPROGR:hover   {color: rgb(179, 2, 140); text-decoration: underline}
+
+p.cuadroPROGR
+  {background:rgb(190, 140, 255); color:rgb(0, 0, 0); padding:15px; border:3px solid #72078d; margin-left:500px; margin-right:500px; margin-top:20px; margin-bottom:40px; text-align:center; font-size:30px; border-radius:10px}
+
+/*Lenguaje de Marcas*/
+
+body#bodyLDMM   
+  {background-color: rgb(253, 182, 182);}
+div#tituloLDMM  
+  {z-index: 2; position: fixed; width: 1890px; background-color:rgb(255,107,81); font-family: Verdana; text-decoration: underline; text-align: center}
+img#img1LDMM
+  {height: 250px; width: 250px; margin-right: 130px; margin-top: 12px; float: right}
+
+a.linkLDMM          {color: rgb(170, 0, 0);   text-decoration: none}
+ .linkLDMM:hover    {color: rgb(235, 8, 8);   text-decoration: underline}
+
+p.cuadroLDMM
+  {background:rgb(255, 140, 140); color:rgb(0, 0, 0); padding:15px; border:3px solid #8d0707; margin-left:500px; margin-right:500px; margin-top:20px; margin-bottom:40px; text-align:center; font-size:30px; border-radius:10px}
+
+/*Entornos de Desarrollo*/
+
+body#bodyEEDD   
+  {background-color: rgb(253, 182, 241);}
+div#tituloEEDD  
+  {z-index: 2; position: fixed; width: 1890px; background-color:rgb(255,107,218); font-family: Verdana; text-decoration: underline; text-align: center}
+img#img1EEDD
+  {height: 230px; width: 230px; margin-right: 120px; margin-top:15px; float: right}
+
+a.linkEEDD          {color: rgb(177, 5, 162); text-decoration: none}
+ .linkEEDD:hover    {color: rgb(218, 4, 189); text-decoration: underline}
+
+img.imgEEDD         {transition: ease-in-out 0.5s;}
+img#imgEEDD1:hover  {transition: ease-in-out 0.5s; width:300px}
+img#imgEEDD2:hover  {transition: ease-in-out 0.5s; width:340px}
+
+p.cuadroEEDD
+  {background:rgb(255, 140, 211); color:rgb(0, 0, 0); padding:15px; border:3px solid #8d076c; margin-left:500px; margin-right:500px; margin-top:20px; margin-bottom:40px; text-align:center; font-size:30px; border-radius:10px}
+
+/*Sistemas Informáticos*/
+
+body#bodySSII   
+  {background-color: rgb(182, 253, 188);}
+div#tituloSSII  
+  {z-index: 2; position: fixed; width: 1890px; background-color:rgb(47,243,90); font-family: Verdana; text-decoration: underline; text-align: center}
+img#img1SSII
+  {height: 250px; width: 250px; margin-right: 120px; margin-top: -25px; float: right}
+img#img2SSII
+  {height: 400px; width: 700px; position: relative; left: 210px}
+
+a.linkSSII          {color: rgb(4, 163, 4);   text-decoration: none}
+ .linkSSII:hover    {color: rgb(10, 212, 3);  text-decoration: underline}
+
+p.cuadroSSII
+  {background:rgb(153, 255, 140); color:rgb(0, 0, 0); padding:15px; border:3px solid #128d07; margin-left:500px; margin-right:500px; margin-top:20px; margin-bottom:40px; text-align:center; font-size:30px; border-radius:10px}
+
+/*Bases de Datos*/
+
+body#bodyBBDD   
+  {background-color: rgb(253, 228, 182);}
+div#tituloBBDD  
+  {z-index: 2; position: fixed; width: 1890px; background-color:rgb(255,151,81); font-family: Verdana; text-decoration: underline; text-align: center}
+img#img1BBDD
+  {height: 240px; width: 240px; margin-right: 120px; margin-top:10px; float: right}
+img#img2BBDD
+  {height: 400px; width: 600px; position: relative; left: 400px}
+
+a.linkBBDD          {color: rgb(146, 78, 0);  text-decoration: none}
+ .linkBBDD:hover    {color: rgb(233, 151, 0); text-decoration: underline}
+
+p.cuadroBBDD
+  {background:rgb(255, 205, 140); color:rgb(0, 0, 0); padding:15px; border:3px solid #8d5707; margin-left:500px; margin-right:500px; margin-top:20px; margin-bottom:40px; text-align:center; font-size:30px; border-radius:10px}
+
+/*Formación y Orientación Laboral*/
+
+body#bodyFOL    
+  {background-color: rgb(255, 255, 173);}
+div#tituloFOL   
+  {z-index: 2; position: fixed; width: 1890px; background-color:rgb(255,229,81); font-family: Verdana; text-decoration: underline; text-align: center}
+img#img1FOL
+  {height: 270px; width: 270px; margin-right: 90px; float: right}
+img#img2FOL
+  {height: 400px; width: 650px; position: relative; left: 380px}
+
+a.linkFOL           {color: rgb(151, 149, 0); text-decoration: none}
+ .linkFOL:hover     {color: rgb(207, 211, 6); text-decoration: underline}
+
+ p.cuadroFOL
+  {background:rgb(255, 253, 140); color:rgb(0, 0, 0); padding:15px; border:3px solid #8d8007; margin-left:500px; margin-right:500px; margin-top:20px; margin-bottom:40px; text-align:center; font-size:30px; border-radius:10px}

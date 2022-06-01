@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+
+    <html lang= "es" dir="ltr">
+    <head>
+        <!--Página web hecha por Adrián de Prada Belda-->
+        <title>Matrícula DAM</title>
+        <meta charset = "UTF-8">            
+        <link rel="stylesheet" type="text/css" href="../CSS/Default.css">
+        <link rel="shortcut icon" href="../recursos/icon1.png" type = "image/png">
+    </head>
+
+    <body>
+
+<!--Cabecera de la página-->
+
+        <a name=PRINCIPIO><div style = background:rgb(189,242,252);>
+            <center>
+            <br>
+            <font face= "Verdana"><h1><u>Desarrollo de Aplicaciones Multiplataforma</u></h1>
+            <h2>Formulario de matriculación</h2></font>
+            <br>
+            </center>
+        </div></a>
+
+        <br><br>
+
+        <center>
+
+        <div class = scroll>
+
+        <form action = "Prac_01_DAM_Matricula-Envío_adrians.prabel.html" method = "post" class = formulario>
+            <font face = Verdana size = "4px">  
+                <table width = 978 cellpadding = 5>
+                    <tr style = background-color:rgb(80,127,180)>
+                    <td class = paso><center><b>▬▬▬▬▬▬▬ PASO 1: Identificación ▬▬▬▬▬▬▬ </b></center></td></tr>
+                    <td>
+                        <fieldset class = apartado>
+                            <legend><b>Datos del alumno</b></legend><br>
+
+                                    <label for = "nombre">Nombre</label>
+                                <input  type = "text" id = "nombre" size = 20 maxlength = 40 
+                                style = margin-left:10px required>
+                                    <label for = "apellidos">Apellidos</label>
+                                <input type = "apellidos" id = "pass" size =30 maxlength = 40 
+                                style = margin-left:10px required>
+                                    <label for = "dni">DNI</label>
+                                <input type = "dni" id = "pass" size = 20 maxlength = 40 
+                                style = margin-left:17px required>
+                                    <br><label for = "fecha_nacimiento">Fecha de nacimiento</label>
+                                <input type = "text" id = "fecha_nacimiento" size = 10 maxlength = 40 
+                                style = margin-left:10px>
+                                    <label for = "ciudad">Ciudad</label>
+                                <input type = "ciudad" id = "pass" size = 20 maxlength = 40 
+                                style = margin-left:10px>
+                                    <label for = "provincia">Provincia</label>
+                                <input type = "provincia" id = "pass" size = 20 maxlength = 40 
+                                style = margin-left:15px>
+                                    <br><label for = "cp">CP</label>
+                                <input type = "number" id = "cp" size = 10 maxlength = 40 
+                                style = margin-left:10px>
+                                    <label for = "correo">Correo electrónico</label>
+                                <input type = "text" id = "correo" size = 20 maxlength = 40 
+                                style = margin-left:10px>
+                                    <label for = "telefono">Teléfono</label>
+                                <input type = "number" id = "telefono" size = 20 maxlength = 9 
+                                style = margin-left:10px> 
+
+                            <br><br>
+
+                                <label for "edad"> <i>Mayor de edad:</i> </label>
+                                <input type = "checkbox" id = "edad" value = "si">
+
+                            <br><br>   
+                        </fieldset>
+                    </td>
+                </table>
+               
+            <br><br>
+
+                <table width = 980 cellpadding = 5>
+                    <tr style = background-color:rgb(80,127,180)>
+                        <td colspan = 3 class = paso>
+                            <center><b>▬▬▬▬▬▬▬ PASO 2: Matrícula ▬▬▬▬▬▬▬ </b></center>
+                       </td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan = 2>
+                            <fieldset class = apartado>
+                                <legend><b>Selecciona el instituto:</b></legend><br>
+                                <center>
+                                    <select id = "instituto" name = "instituto" multiple = "si" size = 8>
+                                        <option value = "Ávila_1">
+                                            Ávila - IES Alonso de Madrigal</option>
+                                        <option value = "Burgos_1">
+                                            Burgos - Santa María de la Nueva</option>
+                                        <option value = "Burgos_2">
+                                            Burgos - San José Artesano</option>
+                                        <option value = "Burgos_3">
+                                            Burgos - CIFP Juan de Colina</option>
+                                        <option value = "León_1">
+                                            León - María Auxiliadora</option>
+                                        <option value = "León_2">
+                                            León - IES San Andrés</option>
+                                        <option value = "Salamanca_1">
+                                            Salamanca - Salesiano San José</option>
+                                        <option value = "Salamanca_2">
+                                            Salamanca - Santísima Trinidad</option>
+                                        <option value = "Salamanca_3">
+                                            Salamanca - IES Venancio Blanco</option>
+                                        <option value = "Soria_1">
+                                            Soria - IES Virgen del Espino</option>
+                                        <option value = "Valladolid_1">
+                                            Valladolid - Gregorio Fernández</option>
+                                        <option value = "Valladolid_2">
+                                            Valladolid - IES Julián Marías</option>
+                                        <option value = "Valladolid_3">
+                                            Valladolid - Everis School</option>
+                                        <option value = "Valladolid_4">
+                                            Valladolid - San Viator</option>
+                                        <option value = "Valladolid_5">
+                                            Valladolid - Río Duero</option>
+                                        <option value = "Zamora_1">
+                                            Zamora - IES Claudio Moyano</option>
+                                    </select>
+                                </center> <br>
+                            </fieldset>
+                        </td>
+                
+                        <td>
+                            <fieldset class = apartado>
+                                <legend><b>Selecciona el curso:</b></legend><br>
+                                <center>
+                                    <select id = "provincia" name = "provincia" multiple = "si" size = 2>
+                                        <option value = "1" selected = "selected">Primero</option>
+                                        <option value = "2">Segundo</option>
+                                    </select>
+                                </center>
+                            </fieldset> 
+                        </td>
+                    </tr>
+                    <td>
+                        <fieldset class = apartado>
+                            <legend><b>Selecciona el turno:</b></legend><br>
+                            <center>
+                                <select id = "provincia" name = "provincia" multiple = "si" size = 2>
+                                    <option value = "diurno" selected = "selected">Diurno</option>
+                                    <option value = "vespertino">Vespertino</option>
+                                </select>
+                            </center>
+                        </fieldset> 
+                    </td>
+                </table>
+
+            <br><br>
+
+                <table width = 980 cellpadding = 5>
+                    <tr style = background-color:rgb(80,127,180)>
+                        <td colspan = 3 class = paso>
+                            <center><b>▬▬▬▬▬▬▬ PASO 3: Envío ▬▬▬▬▬▬▬ </b></center>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <fieldset class = apartado>
+                                <legend><b>Datos de Envío</b></legend><br>
+                                <label for "direccion">Dirección</label>
+                                <input type = "text" id = "direccion" size = 30 style = "margin-left: 50px">
+                                <br><label for "ciudad">Ciudad</label>
+                                <input type = "text" id = "ciudad" size = 20 style = "margin-left: 142px">
+                                <br><label for "cp">Código Postal</label>
+                                <input type = "text" id = "cp" size = 5 style = "margin-left: 187px">
+                            </fieldset>
+                        </td>
+
+                        <td colspan = 2> 
+                            <fieldset class = apartado style = width:420px>
+                                <legend><b>Datos Bancarios</b></legend><br>
+                                <label for "entidad">Nombre de la Entidad</label>
+                                <input type = "text" id = "entidad" size = 15 style = "margin-left: 30px"><br>
+                                <label for "cuenta">NIF del titular</label>
+                                <input type = "text" id = "entidad" size = 15 style = "margin-left: 102px"><br>
+                                <label for "cuenta">Nº de cuenta</label>
+                                <input type = "text" id = "entidad" size = 15 style = "margin-left: 108px">
+                            </fieldset>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = 3>
+                            <fieldset class = apartado>
+                                    <legend><b>Información de interés</b></legend>
+                      
+                                <center><br>
+                                <textarea rows = 8 cols = 100> Escriba aquí sus comentarios al respecto...</textarea>
+                                </center>
+
+                                <br>
+                            </fieldset>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan = 2 rowspan = 3>
+                            <a href = "Prac_01_DAM_Matricula-Help_adrians.prabel.html" target="_blank">
+                                    <img src="../recursos/icon2.png" height="50" width="50" class = help></img>
+                            </a>
+                        </td>
+                        
+                        <td align = right>
+                            <button type = "reset">RESET</button>
+                            <button type = "submit">ENVIAR<br>MATRÍCULA</button>
+                        </td>         
+                    </tr>
+                </table>
+            </font>
+        </form>
+
+        </div>
+
+        </center>
+        
+        <br><br><hr><br><br>
+        
+        <a href="#PRINCIPIO" class = link>
+            <b><i> Vuelve al principio</i></b></a>
+        <a href="../Prac_01_DAM_adrians.prabel.html" style = margin-left:45px class = link>
+            <b><i> Vuelve al menú inicial</i></b></a>
+
+        <br><br>
+
+        <!--Video de fondo de la página web-->
+
+        <video muted autoplay loop>
+            <source src="../recursos/MainBackground.mp4" type = "video/mp4">
+        </video> 
+
+        <!--Capa que permite oscurecer el video de fondo de la página web-->
+
+        <div id = "capa2"></div>
+
+    </body>
+
+</html>

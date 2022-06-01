@@ -1,0 +1,89 @@
+/*Estilo general de la página*/
+
+body {background:linear-gradient(rgb(110, 167, 253),rgb(166, 215, 221)); background-attachment:fixed}
+div {background-color: rgb(189,242,252);}
+li {font-family: 'Verdana';} 
+
+/* Animación de scroll*/
+
+/*
+div.scroll {
+    animation: slide-up 2s;
+}
+
+@keyframes slide-up {
+    from {
+        opacity: 0.2;
+        line-height: 200px;
+    }
+
+    to {
+        opacity: 1;
+        line-height: 25px;
+    }
+
+}
+*/
+
+/*Flecha lateral para volver al inicio de la página*/
+
+img#upArrow {z-index: 3; width:80px; position:fixed; margin-left: 1800px; margin-top: 672px}
+
+/*Enlaces*/
+
+a.link {color: rgb(53, 53, 253); text-decoration: none; transition: all 400ms ease;}
+a.link:hover {color: rgb(2, 14, 182); text-decoration: underline; font-size: 27px; transition: all 400ms ease;}
+
+
+div.fondoPROGR {
+    background-color: hsl(283, 100%, 93%);
+    z-index: 1;
+}
+
+div.fondoLDMM {
+    background-color: hsl(0, 100%, 94%);
+    z-index: 2;
+}
+
+div.fondoEEDD {
+    background-color: hsl(305, 100%, 95%);
+    z-index: 3;
+}
+
+div.fondoSSII {
+    background-color: hsl(120, 100%, 94%);
+    z-index: 4;
+}
+
+div.fondoBBDD {
+    background-color: hsl(37, 100%, 94%);
+    z-index: 5;
+}
+
+div.fondoFOL {
+    background-color: hsl(62, 100%, 94%);
+    z-index: 6;
+}
+
+li {font-size: 35px; font-style: italic; font-family: Tahoma; padding: 10px}
+
+li[class = "Programacion"] 
+    {z-index: 1; background-color: rgb(234, 202, 255); font-family: 'Verdana';}
+li[class = "Lenguaje de Marcas"] 
+    {z-index: 2; background-color: rgb(253, 182, 182); font-family: 'Verdana';}
+li[class = "Entornos de Desarrollo"] 
+    {z-index: 3; background-color: rgb(253, 182, 241); font-family: 'Verdana';}
+li[class = "Sistemas Informaticos"] 
+    {z-index: 4; background-color: rgb(182, 253, 188); font-family: 'Verdana';}
+li[class = "Bases de Datos"] 
+    {z-index: 5; background-color: rgb(253, 228, 182); font-family: 'Verdana';}
+li[class = "FOL"] 
+    {z-index: 6; background-color: rgb(255, 255, 173); font-family: 'Verdana';}
+
+/*Tabla Libros*/
+
+table.tablaLibros {
+    font-size: 25px;
+    border-spacing: 50px;
+    align-content: center;
+}
