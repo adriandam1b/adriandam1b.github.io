@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+    <html lang= "es" dir="ltr">
+    <head>
+        <!--Página web hecha por Adrián de Prada Belda-->
+        <title>Desarrollo de Aplicaciones Multiplataforma</title>
+        <meta charset = "UTF-8">
+        <link rel="stylesheet" type="text/css" href="CSS/Main.css">
+        <link rel="shortcut icon" href="recursos/icon1.png" type = "image/png">
+    </head>
+
+    <body>
+
+        <!-- Cabecera de la página que contiene lo siguiente:
+                - Barra lateral desplegable
+                - Links a las páginas del proyceto
+                - Link a la página para matricularse -->
+
+        <header>
+
+            <!--Link para acceder a los libros del ciclo y matricularse en el mismo-->
+   
+            <a href = "Módulos/Libros_adrians.prabel.html" target = "blank" id = "libros">
+                <p>Libros</p>
+            </a>
+
+            <a href = "Matrícula/Prac_01_DAM_Matricula_adrians.prabel.html" target = "blank" id = "matricula">
+                <p>Matrícula</p>
+            </a>
+
+            <a href = "Login/Prac_01_DAM_Login_adrians.prabel.html" target = "blank" id = "login">
+                <p>Registrarse</p>
+            </a>
+
+            <!--Icono que permite abrir la barra lateral desplegable-->
+
+            <div id = "menuBarra">
+                <label for = "menu">
+                    <img src = "recursos/icon4.png" class = "menuIcon">
+                </label>
+            </div>
+
+            <!--Contenido de la página (cuadro central)-->
+
+            <div class = "contenido">
+                <div id = "capa1"></div>
+                <br>
+                    <p class = "titulo">Desarrollo de Aplicaciones Multiplataforma</p>
+                        <br>
+                        <br>
+                    <p>En esta página web podrás informarte sobre los distintos <br>
+                    módulos que se estudian en este grado superior.</p>
+                        <br>
+                    <p>Abre la <i>barra desplegable</i> para visitar los distintos módulos.</p>
+                        <br>
+                    <p>También puedes visitar el <i>formulario de matriculación</i>.</p>
+                <br>
+            </div>  
+
+            <!--Video de fondo de la página web-->
+
+            <video muted autoplay loop>
+                    <source src="recursos/MainBackground.mp4" type = "video/mp4">
+            </video>  
+        </header>
+
+        <!--Capa que permite oscurecer el video de fondo de la página web-->
+
+        <div id = "capa2"></div>
+
+        <!--Input que permite desplegar la barra lateral que contiene todos los links-->
+
+        <input type = "checkbox" id = "menu">
+        <div class = "menuContainer">
+            <div class = "menuInfo">
+                <nav>
+                    <h1>Módulos:</h1>
+                    <br><hr><br>
+
+                    <a href="Módulos/1_Programacion_adrians.prabel.html" target="blank" id = "PROGR">
+                        Programación</a>
+                    <a href="Módulos/2_Lenguaje_de_Marcas_adrians.prabel.html" target="blank" id = "LDMM">
+                        Lenguaje de Marcas</a>
+                    <a href="Módulos/3_Entornos_de_Desarrollo_adrians.prabel.html" target="blank" id = "EEDD">
+                        Entornos de Desarrollo</a>
+                    <a href="Módulos/4_Sistemas_Informáticos_adrians.prabel.html" target="blank" id = "SSII">
+                        Sistemas Informáticos</a>
+                    <a href="Módulos/5_Bases_de_Datos_adrians.prabel.html" target="blank" id = "BBDD">
+                        Bases de Datos</a>
+                    <a href="Módulos/6_FOL_adrians.prabel.html" target="blank" id = "FOL">
+                        FOL</a>
+                </nav>
+
+                <div id = "author">
+                    <hr><br><br>
+                    <p>Página web hecha por:<br><b>Adrián de Prada Belda</b></p>
+                </div>
+
+                <!--Icono para cerrar la barra desplegable-->
+
+                <label for = "menu">
+                    <img src = "recursos/icon5.png">
+                </label>
+            </div>
+        </div>
+
+        <footer>
+            <p>Lenguaje de Marcas - 2022</p>
+        </footer>
+
+    </body>
+
+</html>
